@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #f1f4f9, #dff1ff);
+}
+
+section .color {
+    position: absolute;
+    filter: blur(250px)
+}
+
+section .color:nth-child(1) {
+    top: -150px;
+    width: 600px;
+    height: 400px;
+    background: #ff359b;
+}
+
+section .color:nth-child(2) {
+    left: 100px;
+    width: 500px;
+    height: 400px;
+    background: #fffd87;
+}
+
+section .color:nth-child(3) {
+    bottom: 50px;
+    right: 100px;
+    width: 400px;
+    height: 400px;
+    background: #00d2ff;
+}
+
+.box {
+    position: relative;
+}
+
+.box .square {
+    position: absolute;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, .1);
+    border: 1px solid rgba(255, 255, 255, .5);
+    background: rgba(255, 255, 255, .1);
+    border-radius: 10px;
+    animation: animate 6s linear infinite;
+    animation-delay: calc(-1s * var(--count));
+}
+
+.box .square:nth-child(1) {
+    top: -50px;
+    right: -60px;
+    width: 100px;
+    height: 100px;
+}
+
+.box .square:nth-child(2) {
+    top: 150px;
+    left: -100px;
+    width: 120px;
+    height: 120px;
+    z-index: 2;
+}
+
+.box .square:nth-child(3) {
+    bottom: 50px;
+    right: -60px;
+    width: 80px;
+    height: 80px;
+    z-index: 2;
+}
+
+.box .square:nth-child(4) {
+    bottom: -80px;
+    left: 100px;
+    width: 50px;
+    height: 50px;
+}
+
+.box .square:nth-child(5) {
+    top: -80px;
+    left: 140px;
+    width: 60px;
+    height: 60px;
+}
+
+@keyframes animate {
+    0%, 100% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+}
+
+.container {
+    position: relative;
+    width: 400px;
+    min-height: 400px;
+    background: rgba(255, 255, 255, .1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, .1);
+    border: 1px solid rgba(255, 255, 255, .3);
+}
+
+.form {
+   position: relative; 
+   width: 100%;
+   height: 100%;
+   padding: 40px;
+}
+
+.form h2 {
+    position: relative;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+.form h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 80px;
+    height: 4px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.form .inputBox {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form .inputBox input {
+    width: 100%;
+    background: rgba(255, 255, 255, .2);
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 35px;
+    border: 1px solid rgba(255, 255, 255, .5);
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1)
+}
+
+.form .inputBox input::placeholder {
+    color: #fff;
+}
+
+.forget {
+    margin-top: 5px;
+    color: #fff;
+}
+
+.forget a {
+    color: #fff;
+    font-weight: 600;
+}
+
+.seePassword {
+    position: absolute;
+    top: 48.5%;
+    right: 50px;
+    transform: translateY(-50%);
+    background-size: cover;
+    cursor: pointer;
+}
+
+.remeber {
+    position: relative;
+    display: inline-block;
+    margin-top: 15px;
+    color: white;
+    cursor: pointer
+}
+
+.remeber input {
+    width: 20px;
+    height: 20px;
+    transform: translateY(20%);
+    cursor: pointer
+}
+
+.form .inputBox input[type="button"] {
+    background: #fff;
+    color: #666;
+    max-width: 150px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.repeatSeePassword {
+    position: absolute;
+    top: 58.5%;
+    right: 50px;
+    transform: translateY(-50%);
+    background-size: cover;
+    cursor: pointer;
+}
+
+.seePasswordReg {
+    position: absolute;
+    top: 47%;
+    right: 50px;
+    transform: translateY(-50%);
+    background-size: cover;
+    cursor: pointer;
+}
+
+@media (max-width: 680px) {
+    .color {
+        width: 250px !important;
+    }
+
+    .box .square {
+        display: none;
+    }
+
+    .container {
+        width: 320px;
+    }
+
+    .seePassword {
+        top: 48.5%
+    }
+
+    .forget {
+        font-size: 12px;
+    }
+
+    .seePasswordReg {
+        top: 47%
+    }
+
+    .repeatSeePassword {
+        top: 58.5%;
+    }
+}
+
+.error {
+    color: red;
+    position: absolute;
+}
+
+.fetchErr {
+    margin-bottom: 20px;
+    color: red;
+}

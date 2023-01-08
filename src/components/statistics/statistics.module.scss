@@ -1,0 +1,55 @@
+.wrapperStatistic {
+    display: flex;
+    justify-content: space-between;
+
+    .infoStatistic {
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .statisticLoad {
+            width: 100%;
+            max-width: 300px;
+            height: 30px;
+            border-radius: 30px;
+            background-color: rgb(217, 213, 213);
+            margin-bottom: 10px;
+
+            div {
+                height: 30px;
+                background: #27cb73;
+                border-radius: 30px;
+                width: 20%;
+            }
+        }
+
+        .subTextLoad, .daysOff, .salaryc {
+            margin-bottom: 5px;
+        }
+
+        .textStyle {
+            font-weight: bold;
+
+            span {
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.viewStatistic {
+    .wrapperBtn {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .calendarBtn, .chartBtn {
+        width: 180px;
+        height: 30px;
+        border-radius: 30px;
+        background-color: #5ee79e;
+        cursor: pointer;
+        border: 2px solid #117c43;
+    }
+}

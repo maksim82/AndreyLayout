@@ -1,0 +1,114 @@
+.hoursTable {
+    margin-bottom: 20px;
+
+    .colTable {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 20px;
+        border: 1px solid black;
+        margin-bottom: 10px;
+        
+        div {
+            width: 20%;
+            text-align: center;
+            border-right: 2px solid black;
+            padding: 5px;
+
+            &:last-child {
+                border: none;
+            }
+        }
+    }
+
+    .generateTable {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 20px;
+        border: 1px solid black;
+        margin-bottom: 10px;
+        
+        div {
+            width: 12.5%;
+            text-align: center;
+            border-right: 2px solid black;
+            padding: 5px;
+
+            input {
+                width: 100%;
+            }
+
+            input[type="radio"] {
+                width: 25%;
+            }
+
+            &:last-child {
+                border: none;
+            }
+        }
+    }
+}
+
+.wrapperDate {
+    display: flex;
+    justify-content: space-between;
+    width: 100% !important;
+
+    .startWeek, .endWeek {
+        width: 50% !important;
+    }
+}
+
+.stepChange {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+
+    div {
+        cursor: pointer;
+    }
+}
+
+.changeMonth {
+    width: 100%;
+    max-width: 200px;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    justify-content: space-between;
+}
+
+.tableSalaryAll {
+    margin-bottom: 5px;
+}
+
+.arrowMonth {
+    cursor: pointer;
+}
+
+.openModal {
+    cursor: pointer;
+}
+
+.wrapperBtn {
+    display: flex;
+    justify-content: space-between;
+    width: 240px;
+
+    .visibleBtn {
+        width: 120px;
+    }
+
+    .salaryBtn {
+        width: 100px;
+    }
+
+    .salaryBtn, .visibleBtn {
+        border: none;
+        cursor: pointer;
+        height: 25px;
+        border-radius: 20px;
+        background-color: #0bc7b1;
+    }
+}
