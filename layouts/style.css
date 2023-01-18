@@ -15,9 +15,9 @@ span {
 }
 
 .title {
-    font-family: 'Abhaya Libre', serif;
-    font-weight: 500;
-    color: #53912D;
+    font-family: 'Comic Neue', cursive;
+    font-weight: 300;
+    color: #53912d;
     font-size: 42px;
 }
 
@@ -34,20 +34,33 @@ hr {
     margin: 15px 0 60px;
 }
 
+.first-line_table {
+    height: 4px;
+    margin-bottom: 15px;
+}
+
+.last-line_table {
+    height: 4px;
+    margin: 15px 0 20px;
+}
+
 .about__info {
     display: flex;
     justify-content: space-between;
 }
 
 .about__text {
-    padding: 20px 15px;
+    padding: 30px 25px;
     background: #CDDDAC;
     width: 49.5%;
     font-style: italic;
     font-size: 18px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+}
+
+.about__text p {
+    margin-bottom: 2px;
 }
 
 .about__gallary {
@@ -65,11 +78,61 @@ hr {
 }
 
 /*Второй и 3 блок*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid white;
+    font-family: 'Comic Neue', cursive;
+}
 
+.img-ex {
+    width: 35%;
+}
+
+.table-ex {
+    width: 60%;
+}
+
+th {
+    border: 2px solid white;
+    padding: 10px 5px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    border: 2px solid white;
+    padding: 10px 5px;
+    text-align: center;
+}
+
+.table-head {
+    background-color: #9bbb55;
+}
+
+.table-subhead {
+    background-color: #cddea8;
+}
+
+.table_color {
+    color: white;
+}
+
+.table-supbody {
+    background-color: #eaf2dd;
+}
+
+.table-subbody {
+    background-color: #c2d69b;
+}
 
 .lining__info-img {
-    width: 80%;
+    width: 90%;
     margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .lining__info-img img {
@@ -83,6 +146,15 @@ hr {
 }
 
 .wrapper-img {
+    width: 200px;
+    height: 200px;
+}
+
+.background-img {
+    width: 100%;
+}
+
+/* .wrapper-img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -107,15 +179,24 @@ hr {
     height: 180px;
     border-radius: 50%;
     border: 6px solid #53912D;
-    background-image: url(./utils/title_1.jpg);
+    background-image: url(./utils/Vagonka-1.png);
     background-size: cover;
-}
+} */
 
 .title-text {
-    width: 60%;
+    width: 80%;
     font-style: italic;
-    color: #53912D;
+    color: #4e8e27;
     font-size: 18px;
+    margin-top: 15px;
+}
+
+p {
+    text-indent: 30px; 
+}
+
+.title-text p {
+    margin-bottom: 4px;
 }
 
 .lining__gallary {
@@ -181,11 +262,13 @@ hr {
 }
 
 .aspens__right-gallary {
+    padding-top: 50px;
     display: flex;
     justify-content: space-around;
 }
 
 .aspens__right-gallary img {
+    margin-top: 5px;
     width: 42%;
     height: 200px;
 }
@@ -220,7 +303,7 @@ hr {
 }
 
 .aspens__right-text {
-    padding: 20px 20px 20px 60px;
+    padding: 30px 20px 20px 60px;
 }
 
 .aspens__right-info img {
@@ -228,6 +311,14 @@ hr {
     width: 100%;
     max-width: 320px;
     margin: 0 auto;
+}
+
+.line_margin {
+    margin-top: -35px;
+}
+
+.table-ex_gallary {
+    width: 100%;
 }
 
 /*5 блок*/
@@ -281,7 +372,7 @@ hr {
     margin-top: 20px;
     display: grid;
     grid-template-columns: 26% 22% 24% 24%;
-    grid-template-rows: repeat(2, 300px);
+    grid-template-rows: repeat(2, 330px);
     gap: 1%
 }
 
@@ -344,9 +435,32 @@ hr {
     margin: 0 auto;
 }
 
-.logo {
-    display: block;
-    margin: 30px auto 0;
+.shield {
+    width: 60%;
+    margin: 30px auto 35px;
+}
+
+.shield-img_title {
+    text-align: center;
+    color: #53912d;
+}
+
+.shield-img {
+    width: 100%;
+}
+
+.logo-wrapper_set {
+    width: 60%;
+    margin: 30px auto;
+}
+
+.logo-wrapper{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.logo-wrapper img {
+    width: 100%;
 }
 
 .set__block {
@@ -356,15 +470,20 @@ hr {
     gap: 1%;
 }
 
-
 .set__block img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.set .elements__item-block {
+.set .elements__item-block_flex {
     grid-column: 1/3;
+}
+
+.elements__item-block_flex {
+    grid-column: 3/5;
+    display: flex;
+    flex-direction: column;
 }
 
 .set__text {
@@ -382,27 +501,21 @@ hr {
     padding-top: 20px;
 }
 
-.set__block .set__text img {
-    width: 313px;
-    height: 70px;
-}
-
 .set__list {
     margin-top: 20px;
-    color: #53912D;
+    color: #4e8e27;
     font-style: italic;
 }
 
 .set__list span {
     display: block;
-    padding-left: 30px;
+    padding-left: 15px;
     font-size: 20px;
     margin-bottom: 10px;
 }
 
 ul {
     list-style-type: none;
-    padding-left: 20px;
     font-size: 18px;
 }
 
@@ -429,10 +542,39 @@ ul {
     grid-column: 1/3;
 }
 
-.accessories__gallary .accessories__item_width img {
-    height: 80%;
+.table_height {
+    height: 100%;
 }
 
-/* .thermo .title {
-    color: 
-} */
+.table-wrapper_height {
+    height: 78%;
+}
+
+.container_position {
+    position: relative;
+}
+
+.business-card, .business-card_position {
+    position: absolute;
+    background-color: #cddea8;
+    width: 130px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    font-size: 19px;
+    top: 95px;
+}
+
+.business-card {
+    left: 50%;
+}
+
+.title-shild_color {
+    color: #1f3b03;
+}
+
+.set-title_color {
+    color: #1f3b03;
+}
