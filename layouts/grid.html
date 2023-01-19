@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Aspen World</title>
 </head>
 <body>
@@ -16,12 +17,12 @@
             <h2 class="title">О Нас</h2>
             <hr class="first-line">
             <div class="about__info">
-                <div class="about__text">
+                <div class="about__text animate__animated animate__fadeIn">
                     <p>
                         <span>Aspen World</span> - торговая марка нашей компании, главный принцип которой - качество, 
                         экологичность и доступность. Такое сочетание стало возможным благодаря использованию передового 
                         деревообрабатывающего оборудования фирмы Weinig.
-                    </з> 
+                    </p> 
                     <p>
                         Предприятие ведет свою деятельность <span>с 2009 года</span>. 
                         Под собственной торговой маркой нашей компании выпускается следующая продукция из осины: <span>вагонка, 
@@ -170,12 +171,12 @@
                     <img class="background-img" src="./utils/Polok-Osina-1.png" alt="">
                 </div>
                 <div class="title-text">
-                    <p>
+                    <p class="wow animate__animated animate__backInDown">
                         <span>Полок</span> — погонажное изделие прямоугольного сечения со скругленными краями. 
                         Основное назначение — создание настилов, помостов, лавок, лежаков, подставок для ног и головы в 
                         банях и саунах.
                     </p> 
-                    <p>
+                    <p class="wow animate__animated animate__backInDown">
                         Материал, из которого изготовлен полок, — <span>массив осины</span> — достаточно прочный и 
                         устойчивый к деформации. Подходит для эксплуатации в помещениях с высокой температурой и влажностью. 
                         Экологически чистый, безопасный для здоровья материал отличается низкой теплопроводностью: древесина 
@@ -774,6 +775,10 @@
             <hr class="last-line thermo-line">
         </div>
     </section>
+    <script src="./wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>
 
