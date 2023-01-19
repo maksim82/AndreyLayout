@@ -56,11 +56,11 @@ hr {
 }
 
 .about__text {
-    padding: 30px 25px;
+    padding: 28px 25px;
     background: #CDDDAC;
     width: 49.5%;
     font-style: italic;
-    font-size: 18px;
+    font-family: 'Comic'; 
     display: flex;
     flex-direction: column;
 }
@@ -194,7 +194,7 @@ td {
     width: 80%;
     font-style: italic;
     color: #4e8e27;
-    font-size: 18px;
+    font-family: 'Comic'; 
     margin-top: 15px;
 }
 
@@ -292,10 +292,11 @@ p {
     z-index: 1;
     background: #CDDDAC;
     padding: 20px 0;
+    font-family: 'Comic'; 
 }
 
 .subtitle {
-    font-size: 24px;
+    font-size: 20px;
     font-style: italic;
     padding-left: 50px;
     font-weight: bold;
@@ -304,8 +305,7 @@ p {
 }
 
 .aspens__right-info p {
-    margin-bottom: 15px;
-    font-size: 18px;
+    margin-bottom: 14px;
     font-style: italic;
 }
 
@@ -359,13 +359,13 @@ p {
 }
 
 .elements__text-info {
+    font-family: 'Comic'; 
     padding-top: 10px;
     grid-column: 1/3;
     background: #CDDDAC;
 }
 
 .elements__text-info p {
-    font-size: 18px;
     padding: 0 15px 0 40px;
     font-style: italic;
 }
@@ -406,7 +406,7 @@ p {
     padding: 20px 0;
     width: 49%;
     background: #CDDDAC;
-    font-size: 18px;
+    font-family: 'Comic'; 
     font-style: italic;
 }
 
@@ -444,12 +444,13 @@ p {
 
 .shield {
     width: 60%;
-    margin: 30px auto 35px;
+    margin: 20px auto 30px;
 }
 
 .shield-img_title {
     text-align: center;
     color: #53912d;
+    font-family: 'Comic'; 
 }
 
 .shield-img {
@@ -496,7 +497,6 @@ p {
 .set__text {
     grid-column: 3/5;
     background: #CDDDAC;
-    font-size: 18px;
 }
 
 .set__text p {
@@ -591,6 +591,14 @@ ul {
     color: #1f3b03;
 }
 
+.set__text {
+    font-family: 'Comic'; 
+}
+
+.set__list {
+    font-family: 'Comic'; 
+}
+
 
 .thermo__item_width {
     display: flex;
@@ -614,13 +622,12 @@ ul {
     padding: 20px 10px;
     color: white;
     background-color: #825632;
-    font-size: 18px;
 }
 
 .thermo__text-wrapper h3 {
     padding: 0 0 40px 30px;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 20px;
     /* font-family: 'Comic Neue', cursive; */
     font-family: 'Comic'; 
 }
@@ -631,6 +638,7 @@ ul {
 
 .thermo_bold {
     font-weight: 700;
+    font-family: 'Comic'; 
     margin-bottom: 15px;
 }
 
