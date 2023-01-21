@@ -11,6 +11,10 @@
 
 body {
     background: url('./utils/Tes.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 .container {
@@ -749,4 +753,389 @@ iframe {
     justify-content: center;
     align-items: center;
     font-family: 'Comic'; 
+}
+
+
+@media (max-width: 1200px) and (min-width: 1160px) {
+    .about__text {
+        padding: 15px 10px;
+    }
+}
+
+@media (max-width: 940px) {
+    .elements__block {
+        grid-template-rows: 190px 190px 200px
+    }
+
+    .elements__text-info {
+        font-size: 14px;
+    }
+
+    .elements__text-info .subtitle {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1160px) and (min-width: 985px) {
+    .about__text {
+        font-size: 15px;
+        padding: 8px 4px;
+    }
+    
+    .title-text {
+        width: 70%;
+    }
+}
+
+@media (max-width: 985px) and (min-width: 800px) {
+    .about__gallary {
+        grid-template-rows: repeat(4, 260px);
+    }
+}
+
+@media (max-width: 860px) {
+    .lining__gallary {
+        flex-direction: column;
+    }
+
+    .lining__gallary img {
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+        max-height: 400px;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 990px) {
+    .business-card_position, .business-card {
+        width: 60px;
+        font-size: 10px;
+        top: 90px;
+        height: 20px;
+    }
+
+    h2 {
+        font-size: 30px !important;
+    }
+
+    .about__info {
+        flex-direction: column;
+    }
+
+    .about__text, .about__gallary {
+        width: 100%;
+    }
+
+    .title-text {
+        width: 65%;
+        font-size: 15px;
+    }
+
+    .shild__block {
+        flex-direction: column;
+    }
+
+    .shild__gallary, .shild__info {
+        width: 100%;
+    }
+
+    .aspens__block-info {
+        flex-direction: column;
+    }
+
+    .aspens__right-block, .aspens__left-block {
+        width: 100%;
+    }
+
+    .aspens__gallary-item_size {
+        width: 35% !important;
+    }
+}
+
+@media (max-width: 740px) {
+    .title-text {
+        width: 60%;
+        font-size: 12px;
+    }
+}
+
+/*лучше не знать что тут происходит и просто довериться*/
+@media (max-width: 1040px) {
+    .box-door__gallary {
+        grid-template-rows: 250px 250px
+    }
+
+    .box-door__gallary table td, th {
+        padding: 4px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 900px) {
+    .box-door__gallary {
+        grid-template-rows: 220px 220px
+    }
+
+
+    .box-door__gallary table td, th {
+        padding: 3px 2px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .elements__block {
+        grid-template-rows: 110px 110px 130px !important;
+    }
+
+    .elements__text-info {
+        font-size: 7px !important;
+    }
+
+    .elements__text-info .subtitle {
+        font-size: 9px !important;
+    }
+
+    .subtitle {
+        padding-left: 20px;
+    }
+
+    .elements__text-info p {
+        padding-left: 8px !important;
+    }
+
+    .title-block {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lining__info-img {
+        flex-direction: column;
+    }
+
+    .img-ex {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .table-ex {
+        width: 100%;
+    }
+
+    .lining__gallary img {
+        max-height: 260px;
+    }
+}
+
+@media (max-width: 780px) {
+    .elements__block {
+        grid-template-rows: 130px 130px 170px
+    }
+
+    .elements__text-info {
+        font-size: 10px;
+    }
+
+    .elements__text-info .subtitle {
+        font-size: 12px;
+    }
+
+    .subtitle {
+        margin-bottom: 5px;
+    }
+
+    .elements__text-info p {
+        padding-left: 20px;
+    }
+
+    .table-ex_gallary td, th, .table-ex_gallar td, th, .table-ex td, th {
+        padding: 0;
+        font-size: 12px;
+    }
+
+    .accessories__gallary {
+        grid-template-rows: 150px 150px 150px
+    }
+
+    .first-line_table {
+        margin-bottom: 8px;
+    }
+
+    .last-line_table {
+        margin-top: 8px;
+    }
+
+    iframe {
+        width: 300px;
+        height: 180px;
+    }
+
+    .footer-contact {
+        font-size: 11px;
+    }
+
+    .footer-contact h3 {
+        font-size: 14px;
+    }
+
+    .thermo__item_width {
+        flex-direction: column;
+    }
+
+    .thermo__img-wrapper {
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .thermo__img-wrapper img {
+        width: 49%;
+    }
+
+    .thermo__text-wrapper {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .box-door__gallary {
+        grid-template-rows: 180px 180px
+    }
+
+
+    .box-door__gallary table td, th {
+        padding: 3px 0;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .business-card_position, .business-card {
+        width: 50px;
+        font-size: 9px;
+        top: 75px;
+        height: 15px;
+    }
+    
+    .table-ex_gallary td, th {
+        font-size: 8px;
+    }
+
+    h2 {
+        font-size: 20px !important;
+    }
+
+    h3 {
+        font-size: 14px !important;
+    }
+
+    .footer-wrapper {
+        flex-direction: column;
+    }
+
+    .footer-contact {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .footer-map {
+        text-align: center;
+    }
+
+    .box-door__gallary {
+        grid-template-rows: 120px 120px
+    }
+
+
+    .box-door__gallary table td, th {
+        padding: 0;
+        font-size: 7px;
+    }
+}
+
+@media (max-width: 670px) {
+    .table-ex_gallar td, th {
+        font-size: 8px;
+    }
+
+    .start-line, .end-line {
+        margin: 5px 0;
+    }
+
+    .thermo-card, .thermo-card_position {
+        font-size: 9px;
+        height: 25px;
+        width: 60px;
+        top: 15px;
+    }
+
+    .aspens__gallary-item_size {
+        width: 46% !important;
+    }
+}
+
+@media (max-width: 460px) {
+    .table-ex_gallar td, th {
+        padding: 2px 0;
+        font-size: 6px;
+    }
+
+    .aspent__img-cover {
+        height: 160px !important;
+    }
+
+    .aspens__right-info {
+        padding-top: 5px;
+    }
+
+    .aspens__gallary-item_size {
+        height: 220px !important;
+    }
+}
+
+@media (max-width: 980px) {
+    .set__list li {
+        font-size: 13px !important;
+    }
+
+    .set__list span {
+        font-size: 16px !important; 
+    }
+
+    .set__text {
+        padding-left: 15px !important;
+        font-size: 12px;
+    }
+
+    .set__text h3 {
+        font-size: 14px;
+    }
+
+    .set__block {
+        grid-template-rows: 380px 260px;
+    }
+}
+
+@media (max-width: 580px) {
+    .set__list li {
+        font-size: 10px !important;
+    }
+
+    .set__list span {
+        font-size: 13px !important; 
+    }
+
+    .set__text {
+        padding-left: 5px !important;
+        font-size: 9px !important;
+    }
+
+    .set__text h3 {
+        font-size: 11px !important;
+    }
+
+    .set__block {
+        grid-template-rows: 380px 200px;
+    }
 }
