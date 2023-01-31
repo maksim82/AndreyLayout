@@ -12,8 +12,44 @@
     <title>Aspen World</title>
 </head>
 <body>
-
-    <section class="about">
+    <div class="navbar__site">
+        <nav class="not__navlink">
+            <ul class="widget-list">
+                <li class="item__link">
+                    <a href="#about">О Нас</a>
+                </li>
+                <li class="item__link">
+                    <a href="#lining">Вагонка</a>
+                </li>
+                <li class="item__link">
+                    <a href="#aspens">Полок</a>
+                </li>
+                <li class="item__link">
+                    <a href="#elements">Элементы полка</a>
+                </li>
+                <li class="item__link">
+                    <a href="#box-door">Дверная коробка</a>
+                </li>
+                <li class="item__link">
+                    <a href="#shild">Мебельный щит</a>
+                </li>
+                <li class="item__link">
+                    <a href="#set">Комплект дверей</a>
+                </li>
+                <li class="item__link">
+                    <a href="#accessories">Аксессуары</a>
+                </li>
+                <li class="item__link">
+                    <a href="#thermo">Термомодифицированный материал</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="menu">Меню</div>
+        <div class="menu-img__none">
+            <img src="./circle.svg" alt="">
+        </div>
+    </div>
+    <section class="about" id="about">
         <div class="container">
             <h2 class="title wow animate__animated animate__fadeInLeft">О Нас</h2>
             <hr class="first-line">
@@ -72,7 +108,7 @@
             <hr class="last-line">
         </div>
     </section>
-    <section class="lining">
+    <section class="lining" id="lining">
         <div class="container">
             <h2 class="title wow animate__animated animate__fadeInLeft">Вагонка Осиновая</h2>
             <hr class="first-line">
@@ -235,7 +271,7 @@
             <hr class="last-line">
         </div>
     </section>
-    <section class="aspens">
+    <section class="aspens" id="aspens">
         <div class="container">
             <h2 class="title wow animate__animated animate__fadeInLeft">Полуполок Осиновый</h2>
             <hr class="first-line">
@@ -309,7 +345,7 @@
             <hr class="last-line size line_margin">
         </div>
     </section>
-    <section class="elements">
+    <section class="elements" id="elements">
         <div class="container">
             <h2 class="title wow animate__animated animate__fadeInRight">Гнутые элементы полка</h2>
             <hr class="first-line">
@@ -365,7 +401,7 @@
             <hr class="last-line">
         </div>
     </section>
-    <section class="box-door">
+    <section class="box-door" id="box-door">
         <div class="container">
             <h2 class="title wow animate__animated animate__fadeInLeft">Сращенная дверная коробка</h2>
             <hr class="first-line">
@@ -455,7 +491,7 @@
             <hr class="last-line">
         </div>
     </section>
-    <section class="shild">
+    <section class="shild" id="shild">
         <div class="container">
             <h2 class="title wow animate__animated animate__fadeInRight">Мебельный щит</h2>
             <hr class="first-line">
@@ -492,7 +528,7 @@
             <hr class="last-line">
         </div>
     </section>
-    <section class="set">
+    <section class="set" id="set">
         <div class="container">
             <h2 class="title wow animate__animated animate__fadeInLeft">Комплект дверей из осины</h2>
             <hr class="first-line">
@@ -558,7 +594,7 @@
             <hr class="last-line">
         </div>
     </section>
-    <section class="accessories">
+    <section class="accessories" id="accessories">
         <div class="container container_position">
             <h2 class="title wow animate__animated animate__fadeInRight">Аксессуары</h2>
             <hr class="first-line">
@@ -601,7 +637,7 @@
             <hr class="last-line">
         </div>
     </section>
-    <section class="thermo">
+    <section class="thermo" id="thermo">
         <div class="container">
             <h2 class="title thermo-head wow animate__animated animate__fadeInLeft">Термомодифицированный материал</h2>
             <hr class="first-line thermo-line">
@@ -797,6 +833,36 @@
     <script src="./wow.min.js"></script>
     <script>
         new WOW().init();
+        const menu = document.querySelector('.menu');
+        const listLink = document.querySelector('.not__navlink')
+        const menuNone = document.querySelector('.menu-img__none');
+        // const navbar = document.querySelector(".navbar__site");
+
+        menu.addEventListener('click', () => {
+            listLink.classList.add("navlink");
+            listLink.classList.remove("not__navlink");  
+
+            menu.classList.add("menu-none");
+            menu.classList.remove("menu");
+
+            menuNone.classList.add("menu-img__link");
+            menuNone.classList.remove("menu-img__none");
+
+            // navbar.style.height = "400px";
+        });
+
+        menuNone.addEventListener('click', () => {
+            listLink.classList.add("not__navlink");
+            listLink.classList.remove("navlink");
+
+            menu.classList.add("menu");
+            menu.classList.remove("menu-none");
+
+            menuNone.classList.remove("menu-img__link");
+            menuNone.classList.add("menu-img__none");
+
+            // navbar.style.height = "40px";
+        });
     </script>
 </body>
 </html>
