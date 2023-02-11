@@ -46,7 +46,7 @@
         </nav>
         <div class="menu">Меню</div>
         <div class="menu-img__none">
-            <img src="./circle.svg" alt="">
+            <img src="./utils/circle.svg" alt="">
         </div>
     </div>
     <section class="about" id="about">
@@ -836,7 +836,7 @@
         const menu = document.querySelector('.menu');
         const listLink = document.querySelector('.not__navlink')
         const menuNone = document.querySelector('.menu-img__none');
-        // const navbar = document.querySelector(".navbar__site");
+        const navbar = document.querySelector(".navbar__site");
 
         menu.addEventListener('click', () => {
             listLink.classList.add("navlink");
@@ -848,7 +848,7 @@
             menuNone.classList.add("menu-img__link");
             menuNone.classList.remove("menu-img__none");
 
-            // navbar.style.height = "400px";
+            navbar.style.height = "400px";
         });
 
         menuNone.addEventListener('click', () => {
@@ -861,7 +861,7 @@
             menuNone.classList.remove("menu-img__link");
             menuNone.classList.add("menu-img__none");
 
-            // navbar.style.height = "40px";
+            navbar.style.height = "40px";
         });
     </script>
 </body>

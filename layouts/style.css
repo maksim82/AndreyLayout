@@ -30,6 +30,10 @@ span {
     font-size: 42px;
 }
 
+.about .title {
+    margin-top: 40px;
+}
+
 hr {
     background-color: #53912D;
     height: 8px;
@@ -52,6 +56,7 @@ hr {
     height: 4px;
     margin: 15px 0 20px;
 }
+
 
 .about__info {
     display: flex;
@@ -1247,8 +1252,10 @@ ul {
     height: 100%;
 }
 
-/* .navbar__site {
+.navbar__site {
     position: fixed;
+    z-index: 999;
+    top: 0;
     width: 100%;
     background-color:rgb(230, 219, 210)
-} */
+}
